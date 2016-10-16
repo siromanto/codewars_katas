@@ -26,8 +26,8 @@
 
 def how_much_coffee(events)
 	coffee_count = 0
-	upperCase = /A-Z/
-	downCase = /a-z/
+	# upperCase = /A-Z/
+	# downCase = /a-z/
 	events.each do |element|
 		if /a-z/=~element
 			coffee_count += 1

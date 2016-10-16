@@ -22,11 +22,17 @@
 #   end
 # end
 
-def switcheroo(x) 
-  
+def switcheroo(x)
+  x.gsub(/[ab]/, 'a' => 'b',  'b' => 'a')
 end
 
+# def switcheroo(x) 
+#   x.gsub("a", "x").gsub("b", "a").gsub("x", "b")
+# end
 
+# def switcheroo(x) 
+#   x.tr('ab','ba')
+# end
 
 
 switcheroo("abc") # "bac"
